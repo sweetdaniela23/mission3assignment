@@ -1,15 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <link rel="icon" src="img/star.png">
-    <link rel="shortcut icon" type="image/png" href="img/star.png" />
-    <meta charset="utf-8" />
-    <title>My Beautiful Website</title>
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="css/myown.css" rel="stylesheet" />
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "My Beautiful Website!";
+}
 
-</head>
-<body>
+
     <h1>Dani Sweeten</h1>
     <img src="img/IMG-7879.JPG" />
     <p>I hope I can successfully be able to create web apps without feeling like I am helpless without doing exactly what is happening in the videos. I want to be confident in my abilities and feel like I can do this independently.</p>
@@ -28,15 +24,11 @@
         <label>Quizzes Percent: </label>
         <input id="quizzespercent" type="number" /> <br />
         <label>Exams Percent: </label>
-        <input id="examspercent" type="number"/> <br />
+        <input id="examspercent" type="number" /> <br />
         <label>Intex Percent: </label>
         <input id="intexpercent" type="number"> <br />
-        <input id="btnSend" type="button" value="Calculate Grade"/>
+        <input id="btnSend" type="button" value="Calculate Grade" />
     </form>
 
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
-    <script src="js/GradeCalculator.js"></script>
 
-</body>
-</html>
+    <script src="js/GradeCalculator.js"></script>
