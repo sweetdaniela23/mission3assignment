@@ -6,7 +6,7 @@
 
 @model GradeCalculatorModel;
 <h2>Grade Calculator</h2>
-<form method="post">
+<form method="post" id="myform">
     <label>Assignments Percent: </label>
     <input id="assignmentspercent" asp-for ="assignments"type="number" /> <br />
     <label>Group Projects Percent: </label>
@@ -21,4 +21,4 @@
 </form>
 <div asp-validation-summary="All"></div>
 
-<script src="js/GradeCalculator.js"></script>
+@*<script src="js/GradeCalculator.js"></script>*@

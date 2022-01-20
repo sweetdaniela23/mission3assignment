@@ -9,8 +9,9 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="css/myown.css" rel="stylesheet" />
-    <script src="js/GradeCalculator.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <link href="~/css/myown.css" rel="stylesheet" />
+    <script src="~/js/GradeCalculator.js"></script>
 
 </head>
 <body>
@@ -19,11 +20,11 @@
         <a asp-controller="Good" asp-action="GradeCalculator">Grade Calculator</a>
     </nav>
     <div>
-        <script src="js/GradeCalculator.js"></script>
         @RenderBody()
     </div>
 
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/GradeCalculator.js"></script>
+
 </body>
 </html>
