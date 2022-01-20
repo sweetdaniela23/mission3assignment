@@ -8,17 +8,17 @@
 <h2>Grade Calculator</h2>
 <form method="post">
     <label>Assignments Percent: </label>
-    <input id="assignmentspercent" name ="assignments"type="number" /> <br />
+    <input id="assignmentspercent" asp-for ="assignments"type="number" /> <br />
     <label>Group Projects Percent: </label>
-    <input id="groupprojectspercent" name ="projects"type="number" /> <br />
+    <input id="groupprojectspercent" asp-for ="projects"type="number" /> <br />
     <label>Quizzes Percent: </label>
-    <input id="quizzespercent" name="quizzes" type="number" /> <br />
+    <input id="quizzespercent" asp-for="quizzes" type="number" /> <br />
     <label>Exams Percent: </label>
-    <input id="examspercent" name="exams" type="number" /> <br />
+    <input id="examspercent" asp-for="exams" type="number" /> <br />
     <label>Intex Percent: </label>
-    <input id="intexpercent" name="intex" type="number"> <br />
+    <input id="intexpercent" asp-for="intex" type="number"> <br />
     <input id="btnSend" type="submit" value="Calculate Grade" />
 </form>
-
+<div asp-validation-summary="All"></div>
 
 <script src="js/GradeCalculator.js"></script>
